@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas_Login</title>
+    <link rel="icon" href="..\trabalho-desenvolvimento-web\logo.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <p style="text-align: center; font-size:30px"> Ferramentas </p>
+        <nav style="text-align: end;">
+            <a href="index.html"> Home </a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div>
+        <section id="login" style="text-align: center;">
+            <h1>Login</h1>
+            <form id="loginForm" action="processo.php" method="post" onsubmit="return showLoginMessage(event);">
+                <div class="form-group">
+                    <label for="Gmail">Gmail:</label>
+                    <input type="text" id="Gmail" name="Gmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="Senha" name="Senha" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Logar</button>
+                </div>
+            </form>
+            <div id="Lnotificacao" style="display:none; position: fixed; top: 20px; right: 20px;
+             background-color: #4caf50; color: white; padding: 15px; border-radius: 5px; 
+             box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                Logado com sucesso!
+            </div>
+        </section>
+    </div>
+    
+    <div>
+        <section id="cadastrar" style="text-align: center;">
+            <h1>Cadastrar</h1>
+            <form id="CadastroForm" action="process.php" method="post">
+                <input type="hidden" name="action" value="cadastrar">
+                
+                <div class="form-group">
+                    <label for="Gmail">Gmail:</label>
+                    <input type="text" id="Gmail" name="Gmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="Senha" name="Senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-Senha">Confirma Senha:</label>
+                    <input type="password" id="c-Senha" name="c-Senha" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="cadastrar">Cadastrar</button>
+                </div>
+            </form>            
+            <div id="Cnotificacao" style="display:none; position: fixed; top: 20px; right: 20px;
+                 background-color: #4caf50; color: white; padding: 15px; border-radius: 5px; 
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            Cadastrado Com Sucesso
+            </div>
+        </section>
+    </div>
+    
+    <script src="Relatorio.js"></script>
+    
+
+    <header>
+        <nav style="text-align: end;">
+            <a style="text-align: end;" href="index.html"> Home</a><br>
+            <a style="text-align: end;" href="produtos.html">Produtos</a><br>
+            <a style="text-align: end;" href="contato.html">Contato</a><br>
+            <a style="text-align: end;" href="login.html">Login</a><br>
+        </nav>
+        <p style="text-align:justify;"> &copy; Projeto de extensão para ajuda os outros</p>
+    </header>
+</body>
+</html>

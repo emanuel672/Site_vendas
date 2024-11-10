@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas_home</title>
+    <link rel="icon" href="..\trabalho-desenvolvimento-web\logo.ico">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p style="text-align: center; font-size:30px"> Ferramentas </p>
+        <nav style="text-align: end;">
+            <a href="index.html"> Home </a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <a href="carrinho.html">
+            <img src="img/carrinho-compras.png" alt="Carrinho de Compras" class="carrinho">
+        </a>
+    </header>
+    <div class="container">
+        <section id="sobre" class="main-content">
+            <h1 style="text-align: center;">Bem-vindo à Ferramentas Qalyt 
+                <br> Sua Destinação para Ferramentas de Qualidade!</h1>
+            <p class="fonte-times" style="font:25px">Na Ferramentas Qalyt, sabemos que a escolha das ferramentas 
+                certas é essencial para o sucesso de qualquer projeto. É por isso que nos dedicamos a oferecer uma 
+                ampla gama de ferramentas de alta qualidade, projetadas para atender às suas necessidades, seja você 
+                um profissional experiente ou um entusiasta do 
+                <h2 style="text-align: center;">"faça você mesmo"</h2>.</p>
+                <img src="..\trabalho-desenvolvimento-web\img\logo.jpeg" 
+                class="logo" style="display: block; margin: auto;"><br>
+            <h1>
+                Se você está a procura ferramentas e utilidades de qualidade para uso doméstico e 
+                industrial, a Super Pro Atacado é o lugar ideal! Chegamos com a maior variedade de produtos
+                essenciais para os mais variados ramos e necessidades. Nosso catálogo conta com:<br><br>
+            </h1>
+            <h2 style="font-size: 20px;">
+                    ferramentas manuais avulsas e em kits e fixadores;<br>
+                    equipamentos e produtos para construção civil;<br>
+                    itens para movimentação de carga;<br>
+                    equipamentos de proteção individual (EPIs);<br>
+                    máquinas elétricas (domésticas e profissionais);<br>
+                    acessórios e produtos para funilaria e pintura;<br>
+                    itens de borracharia e ferramentas especiais para mecânicos;<br>
+                    máquinas e acessórios para jardim e agricultura;<br>
+            </h2>
+        </section>
+        <section id="produtos" class="main-content">
+            <h1>Nossos Produtos</h1>
+            <div class="product-list">
+                <div class="product">
+                    <img src="..\trabalho-desenvolvimento-web\img\ferramenta-kit.jpg" alt="Produto 1" class="product-img">
+                    <h3>Kit de Ferramentas</h3>
+                    <p>R$ 100,00 A Vista ou <br> R$ 150,00 no cartão de cerdito</p>
+                </div>
+                <div class="product">
+                    <img src="..\trabalho-desenvolvimento-web\img\capacete.jpg" alt="Produto 2" class="product-img">
+                    <h3>Capace de Contrução</h3>
+                    <p>R$ 10,00 A Vista ou <br> R$ 20,00 no cartão de cerdito</p>
+                </div>
+                <div class="product">
+                    <img src="..\trabalho-desenvolvimento-web\img\carrinho.jpg" alt="Produto 3" class="product-img">
+                    <h3>Carrinho de Mão</h3>
+                    <p>R$ 55,00 A Vista ou <br> R$ 70,00 no cartão de cerdito</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="productModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" style="cursor:pointer;">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div class="form-group">
+                    <button type="submit">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="movim.js"></script>
+
+        <section id="contato" class="main-content">
+            <h1>Contato</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <header>
+        <nav style="text-align: end;">
+            <a style="text-align: end;" href="index.html"> Home</a><br>
+            <a style="text-align: end;" href="produtos.html">Produtos</a><br>
+            <a style="text-align: end;" href="contato.html">Contato</a><br>
+            <a style="text-align: end;" href="login.html">Login</a><br>
+        </nav>
+        <p style="text-align:justify;"> &copy; Projeto de extensão para ajuda os outros</p>
+    </header>
+</body>
+</html>
